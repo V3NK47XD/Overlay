@@ -62,3 +62,12 @@ git clone <your-repo-url>
 cd overlay-focus-app
 npm install
 npm start
+```
+
+---
+## 📁 Configuration File Location (Windows)
+
+The configuration file is stored at: ``` %APPDATA%\Roaming\overlay\time_variables.json ```
+
+
+
