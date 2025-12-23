@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="renderer.js"></script>
+    <link rel="stylesheet" href="stopwatch.css" />
+    <script defer src="stopwatch.js"></script>
+    <link rel="stylesheet" href="todo.css" />
+    <script defer src="todo.js"></script>
+  </head>
+  <body>
+    <div class="back">
+      <div class="todo-island">
+  <div class="todo-header">✅ My Todo List</div>
+  <div class="todo-input">
+    <input type="text" id="todoInput" placeholder="Add a task..." />
+    <button id="addTodoBtn">Add</button>
+  </div>
+  <ul class="todo-list" id="todoList"></ul>
+</div>
+
+      <<div class="focus-island">
+  <div class="mode-buttons">
+    <button id="mode10">10 min</button>
+    <button id="mode30">30 min</button>
+  </div>
+
+  <div class="stopwatch">
+    <div id="display">00:00:00</div>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <div class="checkboxes">
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+    <label><input type="checkbox" class="timeCheck"> </label>
+  </div>
+</div>
+
+
+      <div class="progress-wrap">
+  <div class="progress-label">🙂 Time Balance</div>
+  <div class="progress-gradient" id="timeGradient"></div>
+  <div class="progress-percent" id="positiveText">0%</div>
+</div>
+
+
+      <div class="list-container">
+        <div class="list-header">🕒 Time Records</div>
+        <ul class="record-list" id="recordList"></ul>
+      </div>
+    </div>
+  </body>
+</html>

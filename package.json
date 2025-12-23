@@ -1,0 +1,31 @@
+{
+  "name": "overlay",
+  "version": "1.0.0",
+  "description": "Productivity overlay for windows",
+  "main": "island.js",
+  "type": "module",
+  "scripts": {
+    "test": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "productivity",
+    "overlay"
+  ],
+  "author": "Venkat Prashad A",
+  "license": "ISC",
+  "dependencies": {
+    "active-win": "^8.2.1"
+  },
+  "devDependencies": {
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+  "files": [
+    "**/*",
+    "node_modules/active-win/**/*"
+  ]
+}
+
+}

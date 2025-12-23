@@ -1,0 +1,119 @@
+.focus-island {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+   background: radial-gradient(circle at center, #90fff219 10%, #00000024 90%);
+  padding: 25px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  border: 2px solid #03edce;
+  transition: transform 0.5s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.focus-island:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 255, 221, 0.226);
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.mode-buttons button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px 0;
+  border: 2px solid #ff90b0;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.1);
+  color: #ff90b0;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-shadow: 0 0 4px #ff90b0;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+.mode-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ff90b0, 0 0 5px rgba(255,144,176,0.6);
+}
+
+.stopwatch {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#display {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #03edce;
+  text-shadow: 0 0 8px rgba(3,237,206,0.6);
+}
+
+.controls button {
+  margin: 0 4px;
+  padding: 6px 12px;
+  border: 2px solid #03edce;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  color: #03edce;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px #03edce, 0 0 5px rgba(3,237,206,0.6);
+  background:#03edcec4; /* filled cyan on hover */
+  color: #000; /* text changes to black for contrast */
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  justify-items: center;
+}
+
+.checkboxes label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(255,144,176,0.2); /* pink background for checkboxes */
+  border: 3px solid #ff90b0;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.checkboxes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff90b0; /* pink tick */
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.checkboxes input[type="checkbox"]:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 8px #ff90b0, 0 0 12px rgba(255,144,176,0.6);
+}
+
+.checkboxes input[type="checkbox"]:checked {
+  box-shadow: 0 0 12px #ff90b0, 0 0 20px rgba(255,144,176,0.6);
+}
