@@ -39,7 +39,6 @@ Same shortcut to toggle — fast and simple ⚡
 ## 🖥️ How It Works
 
 - Runs quietly in the **system tray**
-- Uses **single-instance lock** (only one app runs at a time)
 - Overlay window is:
   - Frameless
   - Always on top
