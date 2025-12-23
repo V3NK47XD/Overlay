@@ -76,7 +76,7 @@ const createWindow = () => {
       nodeIntegration: false,
     },
   });
-  overlayWindow.maximize();
+  overlayWindow.setFullScreen(true);
   overlayWindow.loadFile("new.html");
 
   overlayWindow.on("closed", () => {
@@ -124,4 +124,5 @@ app.on("window-all-closed", () => {
     // Do nothing — keep app running in tray
   }
 });
+
 export {app,timeRecords};
