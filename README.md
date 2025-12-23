@@ -1,5 +1,7 @@
 # 🪟 Overlay Focus App (v1)
 
+### Open for Contribution. 
+
 A lightweight **Electron overlay productivity app** ⚡  
 Runs silently in the background and appears instantly with a keyboard shortcut.
 
